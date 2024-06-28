@@ -13,7 +13,9 @@
 * [Metaprogramming](https://intranet.alxswe.com/rltoken/6OgF5QGbYclp_cwATfq-0g)
 ## Directories
 
-| Directory | Path |
-| ---- | ---- |
-| 0x00-ES6_basics | ./0x00-ES6_basics |
-| 0x02-ES6_classes|./0x02-ES6_classes |
+## Directories
+
+| Directory       | Path                  |
+|-----------------|-----------------------|
+| 0x00-ES6_basics | [./0x00-ES6_basics](./0x00-ES6_basics) |
+| 0x02-ES6_classes | [./0x02-ES6_classes](./0x02-ES6_classes) |
