@@ -17,5 +17,5 @@
 
 | Directory       | Path                  |
 |-----------------|-----------------------|
-| 0x00-ES6_basics | [./0x00-ES6_basics](./0x00-ES6_basics) |
+| 0x00-ES6_basic | [./0x00-ES6_basics](./0x00-ES6_basic) |
 | 0x02-ES6_classes | [./0x02-ES6_classes](./0x02-ES6_classes) |
