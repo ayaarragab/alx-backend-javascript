@@ -22,7 +22,7 @@ export default class HolbertonCourse{
         return this._students;
     }
   
-    setStudents(students) {
+    setStudents(students) { 
         this._students = Array.isArray(students) ? students : null;
     }
   }
