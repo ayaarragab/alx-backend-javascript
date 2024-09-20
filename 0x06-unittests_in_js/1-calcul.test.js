@@ -14,4 +14,7 @@ describe('calculateNumber', function () {
   it('should return correct output', () => {
     assert.equal(calculateNumber('DIVIDE', 5.1, 2), 2.5);
   })
+  it('0 and 0', () => {
+    assert.strictEqual(calculateNumber('DIVIDE', 0.0, 0.0), 'Error');
+  });
 });
