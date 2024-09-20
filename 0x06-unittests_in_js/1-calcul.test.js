@@ -17,4 +17,7 @@ describe('calculateNumber', function () {
   it('0 and 0', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 0.0, 0.0), 'Error');
   });
+  it(' type for operation 2', () => {
+    assert.equal(calculateNumber('plus', 1, 4), 'Error');
+  });
 });
