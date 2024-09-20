@@ -14,4 +14,7 @@ describe('calculateNumber', function () {
   it('should return correct output', () => {
     assert.equal(calculateNumber('DIVIDE', 5.1, 2), 2.5);
   })
+  it('negative number and number rounded up to zero', () => {
+    assert.strictEqual(calculateNumber('DIVIDE', -5.0, -0.2), 'Error');
+  });
 });
