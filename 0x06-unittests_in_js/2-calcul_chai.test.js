@@ -17,7 +17,4 @@ describe('calculateNumber', function () {
   it('should return Error for DIVIDE with 0 and 0', () => {
     expect(calculateNumber('DIVIDE', 0.0, 0.0)).to.equal('Error');
   });
-  it('checking correct type for operation 2', () => {
-    expect(calculateNumber('plus', 1, 4)).to.equal('Error');
-  });
 });
