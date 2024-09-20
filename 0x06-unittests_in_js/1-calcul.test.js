@@ -11,6 +11,9 @@ describe('calculateNumber', function () {
   it('should return correct output', () => {
     assert.equal(calculateNumber('DIVIDE', 1.01, 0), 'Error');
   });
+  it('checking correct type for operation 1', () => {
+    assert.equal(calculateNumber(5, 1, 4), 'Error');
+  });
   it('should return correct output', () => {
     assert.equal(calculateNumber('DIVIDE', 5.1, 2), 2.5);
   })

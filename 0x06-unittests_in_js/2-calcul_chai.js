@@ -1,4 +1,7 @@
 const calculateNumber = (type, a, b) => {
+    if (type == null || typeof type != 'string') {
+        return 'Error' 
+    }
     if (type === 'SUM')
       return Math.round(a) + Math.round(b);
     else if (type === 'SUBTRACT') {
