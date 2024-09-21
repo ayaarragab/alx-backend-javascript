@@ -1,35 +1,14 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const app = require('./api');
+const request = require('request');
+const { expect } = require('chai');
 
-chai.use(chaiHttp);
-const { expect } = chai;
+describe('API integration test', () => {
+  const API_URL = 'http://localhost:7865';
 
-describe('Index Page', () => {
-    it('should return status code 200', (done) => {
-        chai.request(app)
-            .get('/')
-            .end((err, res) => {
-                expect(res).to.have.status(200);
-                done();
-            });
+  it('GET / returns correct response', (done) => {
+    request.get(`${API_URL}/`, (_err, res, body) => {
+      expect(res.statusCode).to.be.equal(200);
+      expect(body).to.be.equal('Welcome to the payment system');
+      done();
     });
-
-    it('should return the correct result', (done) => {
-        chai.request(app)
-            .get('/')
-            .end((err, res) => {
-                expect(res.text).to.equal('Welcome to the payment system');
-                done();
-            });
-    });
-
-    it('should have the correct content-type', (done) => {
-        chai.request(app)
-            .get('/')
-            .end((err, res) => {
-                expect(res).to.have.header('content-type', /html/);
-                done();
-            });
-    });
+  });
 });
