@@ -1,4 +1,4 @@
-const getPaymentTokenFromAPI = require('./6-payment');
+const getPaymentTokenFromAPI = require('./6-payment_token');
 const { expect } = require('chai');
 const { it, describe } = require('mocha');
 
